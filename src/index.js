@@ -21,13 +21,13 @@ module.exports = function zeros(expression) {
 			if(y){
 				while (int>=x){
 					x*=10;
-					res+= Math.floor(int/x) + nechet;
+					res+= Math.ceil(int/x) + nechet;
 					nechet = 0;
 					chet = 1;
 				}
 			}
 			if(!y){
-				nechet += Math.floor(int/10) + 1;
+				nechet += Math.ceil(int/10) + 1;
 				if(chet)
 				{
 					res+= nechet;
